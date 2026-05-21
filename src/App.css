@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 0px;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-header h1 {
+  margin: 10px 0;
+}
+
+/* +1 アニメーションのスタイル */
+.plus-one-animation {
+  position: absolute;
+  right: 0; /* ステータス値の右側に配置 */
+  top: 50%;
+  transform: translate(0, -50%); /* 垂直方向中央揃え */
+  color: #4ffb4f; /* 緑色 */
+  font-weight: bold;
+  opacity: 1;
+  animation: floatUpAndFade 0.8s forwards; /* 0.8秒かけて浮き上がりフェードアウト */
+  pointer-events: none; /* クリックイベントをブロックしない */
+  white-space: nowrap; /* "+1"が改行されないようにする */
+}
+
+@keyframes floatUpAndFade {
+  0% { transform: translate(0, 0); opacity: 1; }
+  100% { transform: translate(0, -20px); opacity: 0; } /* 20px上に移動して透明になる */
+}
