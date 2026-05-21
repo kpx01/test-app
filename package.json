@@ -1,6 +1,7 @@
 {
   "name": "test-app",
   "version": "0.1.0",
+  "homepage": "https://kpx01.github.io/test-app/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
@@ -39,6 +40,5 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
-  },
-  "homepage": "https://github.com/kpx01/test-app/"
+  }
 }
